@@ -1,6 +1,9 @@
-revenue = int(input("Введите выручку фирмы = "))
-costs = int(input("Введите здержки фирмы = "))
-if revenue > costs:
-    print("фирма работает с прибылью")
-else:
-    print("фирма работает с убытком")
+user_number = int(input("Введите целое число = "))
+K = 10
+big_number = 0
+while user_number > 0:
+   next_number = user_number % K
+   if big_number < next_number:
+       big_number = next_number
+   user_number = user_number // 10
+print("самая большая цифра в числе = ", big_number)
