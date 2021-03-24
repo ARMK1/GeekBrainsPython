@@ -1,0 +1,11 @@
+revenue = int(input("Введите выручку фирмы: "))
+costs = int(input("Введите здержки фирмы: "))
+if revenue > costs:
+    print("фирма работает с прибылью")
+    roe = (revenue - costs) / revenue
+    print("рентабельность фирмы равна = ", roe)
+    people = int(input("введите количество сотрудников: "))
+    rev_people = revenue / people
+    print("прибыль на одного сотрудника равна = ", rev_people)
+else:
+    print("фирма работает с убытком")
