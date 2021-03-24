@@ -1,0 +1,6 @@
+time_sec = int(input("Введите время в секундах: "))
+hour = time_sec // 3600
+minute = (time_sec % 3600) // 60
+second = time_sec % 60
+print(f"Время в формате чч:мм:сс={hour}:{minute}:{second}")
+print("Время в формате чч:мм:сс={:>2}:{:>2}:{:>2}".format(hour, minute, second))
