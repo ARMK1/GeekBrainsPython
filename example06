@@ -1,0 +1,11 @@
+dist = int(input("Введите дальность пробежки первого дня: "))
+max_dist = int(input("Введите желаемую дальность тренировки: "))
+numb_day = 1
+summ_dist = dist
+while True:
+    print(numb_day, " день : ", summ_dist)
+    summ_dist = summ_dist + (summ_dist * 0.1)
+    numb_day = numb_day + 1
+    if summ_dist > max_dist:
+        print("вы достигнете результата на ", numb_day, " день")
+        break
